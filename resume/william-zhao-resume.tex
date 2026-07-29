@@ -1,0 +1,270 @@
+%-------------------------
+% Resume in LaTeX
+% William Zhao
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{soul}
+\input{glyphtounicode}
+
+% Metric emphasis: bold on a soft yellow highlight.
+\definecolor{metricyellow}{HTML}{FFF3B0}
+\sethlcolor{metricyellow}
+% \mbox keeps soul from choking on \$ and other escaped characters.
+\newcommand{\metric}[1]{\hl{\mbox{\textbf{#1}}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & #2 \\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.22in]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape William Zhao} \\ \vspace{5pt}
+  \small
+  San Francisco, CA $|$
+  \href{mailto:williamzhao474@gmail.com}
+    {\underline{williamzhao474@gmail.com}} $|$
+  \href{https://williamzhao259.github.io}
+    {\underline{williamzhao259.github.io}} $|$
+  \href{https://github.com/williamzhao7140}
+    {\underline{GitHub}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Founder}
+    {2026}
+    {Muochi}
+    {San Francisco, CA}
+
+  \resumeItemListStart
+
+    \resumeItem{
+      Built and shipped a no-code tool for creating interactive digital gifts;
+      grew to \metric{115,000 users} and \metric{3M views} with no paid acquisition.
+    }
+
+    \resumeItem{
+      Drove \metric{\$25K} in revenue on a \$1.99 one-time upgrade, concentrated
+      around a Valentine's Day launch that rode existing seasonal search demand.
+    }
+
+    \resumeItem{
+      Reached 11\% D1 retention. Diagnosed the ceiling as structural rather than
+      executional: occasion-bound demand plus one-time monetization left no
+      recurring reason to return.
+    }
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Founding Growth}
+    {2025}
+    {Floot (Y Combinator S25)}
+    {San Francisco, CA}
+
+  \resumeItemListStart
+
+    \resumeItem{
+      Recruited directly by the founding team on the strength of CareerLoop's growth.
+    }
+
+    \resumeItem{
+      Ran creator partnership outreach and onboarding to support early growth.
+    }
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Product \& Growth Intern}
+    {2025}
+    {YouWare}
+    {Remote}
+
+  \resumeItemListStart
+
+    \resumeItem{
+      Ran landing page variant tests and wrote up performance analysis for the
+      product team.
+    }
+
+    \resumeItem{
+      Analyzed paid acquisition data surfaced through internal reporting tooling
+      and documented findings for weekly review.
+    }
+
+    \resumeItem{
+      Supported community growth initiatives.
+    }
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Founder}
+    {2024}
+    {CareerLoop}
+    {Santa Cruz, CA}
+
+  \resumeItemListStart
+
+    \resumeItem{
+      Built an AI resume builder solo; grew to \metric{30,000 users} and roughly
+      \metric{100M views} across social with no ad spend (63M on TikTok alone).
+    }
+
+    \resumeItem{
+      Drove \metric{\$30K} over six months at a 3.31\% free-to-paid conversion
+      rate, with 96\% of signups completing onboarding.
+    }
+
+    \resumeItem{
+      Product was still generating revenue when I left it to join Floot; 4\% D1
+      retention made it a one-time-use tool rather than a durable business.
+    }
+
+    \resumeItem{
+      Covered by UC Tech News, Lookout Santa Cruz, and Santa Cruz Works.
+    }
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SELECTED WORK-----------
+\section{Selected Work}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Milkbun} $|$
+    \emph{React Native, Godot, Screen Time API}}
+    {2026}
+
+  \resumeItemListStart
+
+    \resumeItem{
+      iOS self-care app pairing routine tracking and recurring app limits with a
+      persistent 16-bit world that grows as tasks are completed.
+    }
+
+    \resumeItem{
+      Hybrid architecture: React Native owns product state, native APIs, and
+      persistence; Godot renders the simulation. State syncs bidirectionally
+      across a custom bridge.
+    }
+
+    \resumeItem{
+      Designed explicitly around the retention failures of prior products --- the
+      world advances while the app is closed, creating a daily return trigger.
+    }
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\begin{tabularx}{0.97\textwidth}{@{}lX@{}}
+
+  \textbf{Product} &
+  Growth experimentation, A/B testing, funnel analysis, retention diagnosis,
+  monetization design \\
+
+  \textbf{Technical} &
+  Python, JavaScript/TypeScript, React, React Native, Django, Godot,
+  OpenAI API \& embeddings \\
+
+  \textbf{Design} &
+  Figma, Rive \\
+
+  \textbf{Tools} &
+  PostHog, Stripe, Google Search Console \\
+
+\end{tabularx}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of California, Santa Cruz}
+    {2023 -- 2025}
+    {Computer Science}
+    {Santa Cruz, CA}
+
+\resumeSubHeadingListEnd
+
+\end{document}
