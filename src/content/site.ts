@@ -2,7 +2,7 @@
 
 export const site = {
   name: "William Zhao",
-  role: "Product Builder",
+  role: "Product",
   email: "williamzhao474@gmail.com",
 };
 
@@ -14,10 +14,10 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
-  { year: "Now", org: "Looking", role: "Product roles in SF" },
-  { year: "2026", org: "Muochi", role: "Founder · 115k users" },
-  { year: "2025", org: "Floot (YC S25)", role: "Founding Growth" },
-  { year: "2024", org: "CareerLoop", role: "Founder · 30k users" },
+  { year: "Now", org: "UC Santa Cruz", role: "Computer Science · graduating 2028" },
+  { year: "2026", org: "Muochi", role: "Co-founder, Product · 115k users" },
+  { year: "2025", org: "CareerLoop", role: "Founder, Product · 30k users" },
+  { year: "2024", org: "The Humanities Institute, UCSC", role: "Research Assistant" },
 ];
 
 export type Project = {

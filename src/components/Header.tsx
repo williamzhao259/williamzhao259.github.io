@@ -25,6 +25,14 @@ export default function Header() {
           >
             {site.email}
           </a>
+          <a
+            href="/william-zhao-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-60 hover:opacity-100 hover:text-primary transition-colors"
+          >
+            Resume
+          </a>
           {socials.map((s) => (
             <a
               key={s.label}

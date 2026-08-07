@@ -89,110 +89,106 @@
 
 %----------HEADING----------
 \begin{center}
-  {\Huge \scshape William Zhao} \\ \vspace{5pt}
+  {\Huge \scshape William Zhao} \\ \vspace{3pt}
+  {\small \bfseries Seeking a Summer 2027 Product Management internship}
+  \\ \vspace{7pt}
   \small
   San Francisco, CA $|$
+  415-535-4199 $|$
   \href{mailto:williamzhao474@gmail.com}
     {\underline{williamzhao474@gmail.com}} $|$
   \href{https://williamzhao259.github.io}
-    {\underline{williamzhao259.github.io}} $|$
+    {\underline{Portfolio}} $|$
   \href{https://github.com/williamzhao7140}
     {\underline{GitHub}}
 \end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of California, Santa Cruz}
+    {Expected 2028}
+    {B.A. Computer Science}
+    {Santa Cruz, CA}
+
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Founder}
-    {2026}
+    {Co-founder, Product}
+    {Dec 2025 -- Mar 2026}
     {Muochi}
     {San Francisco, CA}
 
   \resumeItemListStart
 
     \resumeItem{
-      Built and shipped a no-code tool for creating interactive digital gifts;
-      grew to \metric{115,000 users} and \metric{3M views} with no paid acquisition.
+      Owned product end to end for a tool that turns branching slideshows into
+      personalized digital gifts: the sender builds paths the recipient clicks
+      through, then shares it as a link. Reached \metric{115,000 users}.
     }
 
     \resumeItem{
-      Drove \metric{\$25K} in revenue on a \$1.99 one-time upgrade, concentrated
-      around a Valentine's Day launch that rode existing seasonal search demand.
+      Scoped the product around an occasion with existing demand rather than
+      building for a general use case, and shipped to that window; the launch
+      produced \$25K in revenue.
     }
 
     \resumeItem{
-      Reached 11\% D1 retention. Diagnosed the ceiling as structural rather than
-      executional: occasion-bound demand plus one-time monetization left no
-      recurring reason to return.
+      Instrumented the retention funnel in PostHog and traced the 11\% D1 ceiling
+      to the product itself, not the funnel: gifting is occasion-bound, so there
+      was no reason to come back.
+    }
+
+    \resumeItem{
+      Ran session replays and cut signup, personalization, and the drag-and-drop
+      editor from the path to first value; users went straight to a template,
+      with payment deferred to customization.
     }
 
   \resumeItemListEnd
 
   \resumeSubheading
-    {Founding Growth}
-    {2025}
-    {Floot (Y Combinator S25)}
-    {San Francisco, CA}
-
-  \resumeItemListStart
-
-    \resumeItem{
-      Recruited directly by the founding team on the strength of CareerLoop's growth.
-    }
-
-    \resumeItem{
-      Ran creator partnership outreach and onboarding to support early growth.
-    }
-
-  \resumeItemListEnd
-
-  \resumeSubheading
-    {Product \& Growth Intern}
-    {2025}
-    {YouWare}
-    {Remote}
-
-  \resumeItemListStart
-
-    \resumeItem{
-      Ran landing page variant tests and wrote up performance analysis for the
-      product team.
-    }
-
-    \resumeItem{
-      Analyzed paid acquisition data surfaced through internal reporting tooling
-      and documented findings for weekly review.
-    }
-
-    \resumeItem{
-      Supported community growth initiatives.
-    }
-
-  \resumeItemListEnd
-
-  \resumeSubheading
-    {Founder}
-    {2024}
+    {Founder, Product}
+    {Jun 2024 -- Dec 2025}
     {CareerLoop}
     {Santa Cruz, CA}
 
   \resumeItemListStart
 
     \resumeItem{
-      Built an AI resume builder solo; grew to \metric{30,000 users} and roughly
-      \metric{100M views} across social with no ad spend (63M on TikTok alone).
+      Built and owned an AI resume builder from problem definition through
+      launch, reaching \metric{30,000 users} with no paid acquisition.
     }
 
     \resumeItem{
-      Drove \metric{\$30K} over six months at a 3.31\% free-to-paid conversion
-      rate, with 96\% of signups completing onboarding.
+      Cut onboarding from seven steps to three; 96\% of signups completed it and
+      built a resume, and 3.31\% converted to paid, producing \$30K over six
+      months.
     }
 
     \resumeItem{
-      Product was still generating revenue when I left it to join Floot; 4\% D1
-      retention made it a one-time-use tool rather than a durable business.
+      Tested three monetization models against a 47\% subscription churn rate: a
+      carded free trial, a \$1.99 tripwire, and one-time pricing. Shipped the
+      model that matched observed behavior, since users bought more \$9.99 single
+      downloads than \$19.99 unlimited, underestimating their own usage.
+    }
+
+    \resumeItem{
+      Identified 4\% D1 retention as a product-market problem rather than a
+      funnel problem: a resume is built once.
+    }
+
+    \resumeItem{
+      Shipped resume upload, bullet generation, and full rewrites, plus role
+      matching against scraped job listings. Killed an AI career copilot before
+      launch: the agent was inconsistent and the interface required teaching
+      users a new interaction model, which the core flow did not.
     }
 
     \resumeItem{
@@ -201,33 +197,30 @@
 
   \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-
-%-----------SELECTED WORK-----------
-\section{Selected Work}
-\resumeSubHeadingListStart
-
-  \resumeProjectHeading
-    {\textbf{Milkbun} $|$
-    \emph{React Native, Godot, Screen Time API}}
-    {2026}
+  \resumeSubheading
+    {Research Assistant}
+    {Sep 2023 -- Jun 2024}
+    {The Humanities Institute, UC Santa Cruz}
+    {Santa Cruz, CA}
 
   \resumeItemListStart
 
     \resumeItem{
-      iOS self-care app pairing routine tracking and recurring app limits with a
-      persistent 16-bit world that grows as tasks are completed.
+      Built a translation pipeline that ingested large PDF corpora and ran them
+      through OpenAI and other models; the faculty lead passed its output to
+      graduate researchers, who evaluated quality against source texts.
     }
 
     \resumeItem{
-      Hybrid architecture: React Native owns product state, native APIs, and
-      persistence; Godot renders the simulation. State syncs bidirectionally
-      across a custom bridge.
+      Shipped it as a web app rather than internal tooling so the humanities
+      researchers could run translations themselves without touching a script.
+      Python, Flask, deployed on Heroku.
     }
 
     \resumeItem{
-      Designed explicitly around the retention failures of prior products --- the
-      world advances while the app is closed, creating a daily return trigger.
+      Translated the faculty lead's research goals into buildable requirements,
+      scoping what was technically feasible, on a five-person research assistant
+      team split across engineering and UI/UX.
     }
 
   \resumeItemListEnd
@@ -237,34 +230,20 @@
 %-----------SKILLS-----------
 \section{Skills}
 
-\begin{tabularx}{0.97\textwidth}{@{}lX@{}}
+\begin{tabularx}{0.97\textwidth}{@{}l@{\hspace{1em}}X@{}}
 
   \textbf{Product} &
-  Growth experimentation, A/B testing, funnel analysis, retention diagnosis,
-  monetization design \\
+  User research, roadmapping, prioritization, A/B testing, funnel and retention
+  analysis, monetization design, data-informed decision making \\
 
   \textbf{Technical} &
-  Python, JavaScript/TypeScript, React, React Native, Django, Godot,
+  Python, JavaScript/TypeScript, React, React Native, Django, PostgreSQL,
   OpenAI API \& embeddings \\
 
-  \textbf{Design} &
-  Figma, Rive \\
-
   \textbf{Tools} &
-  PostHog, Stripe, Google Search Console \\
+  PostHog, Microsoft Clarity, Stripe, Linear, Notion, Figma,
+  Google Search Console \\
 
 \end{tabularx}
-
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-    {University of California, Santa Cruz}
-    {2023 -- 2025}
-    {Computer Science}
-    {Santa Cruz, CA}
-
-\resumeSubHeadingListEnd
 
 \end{document}

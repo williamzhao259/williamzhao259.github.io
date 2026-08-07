@@ -7,7 +7,8 @@ export default function Home() {
       <div className="flex flex-col w-full max-w-[1800px]">
         <section className="grid grid-cols-1 gap-12 lg:gap-6 pt-8 lg:pt-[26vh] pb-8 w-full">
           <h1 className="max-w-[700px] text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight font-normal">
-            I&apos;m William. I build consumer apps in San Francisco.
+            I&apos;m William. I&apos;ve built two consumer apps that reached
+            145,000 people.
           </h1>
 
           <div className="flex flex-col gap-3 lg:gap-1">
