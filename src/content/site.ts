@@ -2,9 +2,34 @@
 
 export const site = {
   name: "William Zhao",
-  role: "Product",
+  role: "Founder, Product",
   email: "williamzhao474@gmail.com",
+  location: "San Francisco, CA",
+  seeking: "Seeking a Summer 2027 Product Management internship",
 };
+
+export type SkillGroup = {
+  label: string;
+  items: string;
+};
+
+export const skills: SkillGroup[] = [
+  {
+    label: "Product",
+    items:
+      "User research, roadmapping, prioritization, A/B testing, funnel and retention analysis, monetization design, data-informed decision making",
+  },
+  {
+    label: "Technical",
+    items:
+      "Python, JavaScript/TypeScript, React, React Native, Django, PostgreSQL, OpenAI API & embeddings",
+  },
+  {
+    label: "Tools",
+    items:
+      "PostHog, Microsoft Clarity, Stripe, Linear, Notion, Figma, Google Search Console",
+  },
+];
 
 export type ExperienceItem = {
   year: string;
@@ -14,10 +39,13 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
-  { year: "Now", org: "UC Santa Cruz", role: "Computer Science · graduating 2028" },
-  { year: "2026", org: "Muochi", role: "Co-founder, Product · 115k users" },
-  { year: "2025", org: "CareerLoop", role: "Founder, Product · 30k users" },
-  { year: "2024", org: "The Humanities Institute, UCSC", role: "Research Assistant" },
+  { year: "Now", org: "UC Santa Cruz", role: "B.A. Computer Science · expected Dec 2027" },
+  { year: "2024 — 2025", org: "CareerLoop", role: "Founder, Product · 145k users" },
+  {
+    year: "2023 — 2024",
+    org: "The Humanities Institute, UCSC",
+    role: "Research Assistant",
+  },
 ];
 
 export type Project = {
@@ -39,58 +67,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "muochi",
-    title: "115,000 users, and what killed it",
-    subtitle: "Muochi",
-    status: "",
-    aspect: "aspect-[16/9]",
-    accent: "rgba(220, 38, 38, 0.10)",
-    image: "/projects/muochi/muochi.png",
-    metrics: [
-      { value: "115k", label: "users" },
-      { value: "3M", label: "views" },
-      { value: "$25k", label: "revenue" },
-      { value: "11%", label: "D1 retention" },
-    ],
-    sections: [
-      {
-        heading: "What it was",
-        body: "Interactive slides repurposed for gifting. You build something for one person, send it, they open it.",
-      },
-      {
-        heading: "Why I built it",
-        body: "CareerLoop died because you only need a resume once. Gifting looked recurring — birthdays, holidays, anniversaries — and it was far more viral.",
-      },
-      {
-        heading: "How it grew",
-        body: "Valentine's Day. TikTok does over 100 billion views on that search alone, so the attention was already there — I just had to be in front of it.",
-      },
-      {
-        heading: "What happened",
-        body: "Users and revenue spiked together in February, then decayed. $25k total, almost all of it in that window.",
-      },
-      {
-        heading: "Why it died",
-        body: "11% D1 retention. Better than CareerLoop's 4%, still not a business. Gifting is occasion-bound, the free template was good enough for most people, and a $1.99 one-time fee meant each user was worth $1.99 exactly once.",
-      },
-      {
-        heading: "What I'd do differently",
-        body: "Virality isn't a business without retention. I'd take a smaller product people open weekly over a spike I have to re-earn every February.",
-      },
-    ],
-  },
-  {
     slug: "careerloop",
-    title: "An AI resume builder that reached 30,000 users",
+    title: "An AI resume builder that reached 145,000 users",
     subtitle: "CareerLoop",
     status: "",
     aspect: "aspect-[16/9]",
     accent: "rgba(37, 99, 235, 0.10)",
     image: "/projects/careerloop/careerloop.png",
     metrics: [
-      { value: "30k", label: "users" },
+      { value: "145k", label: "users" },
       { value: "100M", label: "views" },
-      { value: "$30k", label: "revenue in 6 months" },
+      { value: "$50k", label: "revenue in 6 months" },
       { value: "4%", label: "D1 retention" },
       { value: "3.31%", label: "free to paid" },
     ],
@@ -101,7 +88,7 @@ export const projects: Project[] = [
       },
       {
         heading: "How it grew",
-        body: "Social, no ad spend. ~100M views across platforms brought in 30,000 users.",
+        body: "Social, no ad spend. ~100M views across platforms brought in 145,000 users.",
         image: {
           src: "/projects/careerloop/tiktok-analytics.png",
           alt: "TikTok analytics showing 63M video views, 1.6M likes, and 207K shares over one year",
@@ -112,11 +99,23 @@ export const projects: Project[] = [
       },
       {
         heading: "What worked",
-        body: "96% of signups finished onboarding and built a resume, and 3.31% of them paid — $30k over six months.",
+        body: "I cut onboarding from seven steps to three. 96% of signups finished it and built a resume, and 3.31% of them paid — $50k over six months.",
+      },
+      {
+        heading: "What I shipped",
+        body: "Resume upload, bullet generation, and full rewrites, plus role matching against scraped job listings.",
+      },
+      {
+        heading: "What I killed",
+        body: "An AI career copilot, before launch. The agent was inconsistent, and the interface required teaching users a new interaction model — something the core flow never asked of them.",
+      },
+      {
+        heading: "Pricing",
+        body: "Subscription churn hit 47%, so I tested three models against it: a carded free trial, a $1.99 tripwire, and one-time pricing. Users bought more $9.99 single downloads than $19.99 unlimited — they underestimated their own usage. I shipped the model that matched the behavior I could observe, not the one with the better theoretical LTV.",
       },
       {
         heading: "What didn't",
-        body: "4% D1 retention. You build a resume once and you're done — there was no reason to come back.",
+        body: "4% D1 retention. I read it as a product-market problem rather than a funnel problem: you build a resume once and you're done — there was no reason to come back.",
       },
       {
         heading: "How it ended",
@@ -139,6 +138,28 @@ export const projects: Project[] = [
       {
         outlet: "Santa Cruz Works",
         href: "https://www.santacruzworks.org/news/careerloop",
+      },
+    ],
+  },
+  {
+    slug: "translation-pipeline",
+    title: "A translation pipeline humanities researchers could run themselves",
+    subtitle: "The Humanities Institute, UCSC",
+    status: "",
+    aspect: "aspect-[16/9]",
+    accent: "rgba(22, 163, 74, 0.10)",
+    sections: [
+      {
+        heading: "What it was",
+        body: "A pipeline that ingested large PDF corpora and ran them through OpenAI and other models. The faculty lead passed its output to graduate researchers, who evaluated translation quality against the source texts.",
+      },
+      {
+        heading: "The call I made",
+        body: "I shipped it as a web app rather than internal tooling. The researchers were humanities faculty, not engineers — internal tooling would have meant they filed requests and waited on me. A web app meant they ran translations themselves without touching a script. Python, Flask, deployed on Heroku.",
+      },
+      {
+        heading: "What the role actually was",
+        body: "Translating the faculty lead's research goals into buildable requirements, and scoping what was technically feasible against what they wanted. Five-person research assistant team split across engineering and UI/UX.",
       },
     ],
   },

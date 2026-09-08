@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import { experience, projects } from "@/content/site";
+import { experience, projects, site, skills } from "@/content/site";
 
 export default function Home() {
   return (
@@ -7,9 +7,12 @@ export default function Home() {
       <div className="flex flex-col w-full max-w-[1800px]">
         <section className="grid grid-cols-1 gap-12 lg:gap-6 pt-8 lg:pt-[26vh] pb-8 w-full">
           <h1 className="max-w-[700px] text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight font-normal">
-            I&apos;m William. I&apos;ve built two consumer apps that reached
-            145,000 people.
+            I&apos;m William. I build products and follow the evidence.
           </h1>
+
+          <p className="max-w-[700px] text-[15px] opacity-60 -mt-6 lg:-mt-2">
+            {site.seeking} · {site.location}
+          </p>
 
           <div className="flex flex-col gap-3 lg:gap-1">
             {experience.map((item) => (
@@ -42,6 +45,19 @@ export default function Home() {
         <section className="flex flex-col gap-6 pb-12">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
+          ))}
+        </section>
+
+        <section className="flex flex-col gap-3 lg:gap-1 pb-16">
+          {skills.map((group) => (
+            <div key={group.label} className="flex gap-2">
+              <span className="w-26 min-w-26 text-[15px] opacity-60">
+                {group.label}
+              </span>
+              <span className="max-w-[700px] text-[15px] opacity-60">
+                {group.items}
+              </span>
+            </div>
           ))}
         </section>
       </div>
