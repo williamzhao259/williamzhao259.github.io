@@ -5,7 +5,6 @@ export const site = {
   role: "Founder, Product",
   email: "williamzhao474@gmail.com",
   location: "San Francisco, CA",
-  seeking: "Seeking a Summer 2027 Product Management internship",
 };
 
 export type SkillGroup = {

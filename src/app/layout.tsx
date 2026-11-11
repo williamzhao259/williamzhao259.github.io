@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "William Zhao | Product",
   description:
-    "Product builder and Computer Science student at UC Santa Cruz, seeking a Summer 2027 Product Management internship.",
+    "William Zhao — selected work and projects.",
 };
 
 export default function RootLayout({
