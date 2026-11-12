@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in LaTeX
+% Template: Jake Gutierrez, based on https://github.com/sb2nov/resume
+% License: MIT
+% William Zhao
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+%-------------------------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[topsep=8pt, itemsep=2pt,
+    parsep=0pt, partopsep=0pt]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%-------------------------
+% Resume
+%-------------------------
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+  \textbf{\Huge \scshape William Zhao} \\ \vspace{2pt}
+  {\small \bfseries Seeking a Summer 2027 Program Management or Product Operations internship} \\ \vspace{4pt}
+  \small
+  San Francisco, CA $|$
+  415-535-4199 $|$
+  \href{mailto:wzhao67@ucsc.edu}
+  {\underline{wzhao67@ucsc.edu}} $|$
+  \href{https://www.linkedin.com/in/william-z-b386b4427/}
+  {\underline{LinkedIn}}
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {University of California, Santa Cruz}
+  {Expected December 2027}
+  {B.A. Computer Science}
+  {Santa Cruz, CA}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Founding Product Manager}
+  {Jun 2024 -- Dec 2025}
+  {CareerLoop}
+  {San Francisco, CA}
+
+\resumeItemListStart
+
+\resumeItem{
+  \textbf{End-to-End Ownership:} Ran an AI resume builder from problem
+  definition through launch, scaling to \textbf{145,000+ users} and
+  \href{https://www.tiktok.com/@resume_buildercareerloop}{\underline{50,000+ followers and 60 million views}}
+  with no paid acquisition.
+}
+
+\resumeItem{
+  \textbf{Delivery:} Scoped, sequenced, and shipped \textbf{four workflows}:
+  resume upload, bullet generation, full rewrites, and job matching against
+  scraped listings.
+}
+
+\resumeItem{
+  \textbf{Process Improvement:} Cut onboarding from seven steps to three;
+  \textbf{96\% of signups} completed a resume and \textbf{3.31\%} converted
+  to paid, producing \textbf{\$50,000} over six months.
+}
+
+\resumeItem{
+  \textbf{Experimentation:} Ran pricing tests across \textbf{three models}
+  (carded free trial, \$1.99 tripwire, one-time pricing) against
+  \textbf{47\% subscription churn}; moved to \$9.99 single downloads after
+  they outsold \$19.99 unlimited access.
+}
+
+\resumeItem{
+  \textbf{Metrics \& Reporting:} Tracked activation, conversion, and
+  retention in PostHog and Microsoft Clarity; traced \textbf{4\% D1
+  retention} to one-time resume use and reported it as a product-market
+  limit outside the funnel.
+}
+
+\resumeItem{
+  \textbf{Scope Control:} Cancelled a planned AI career copilot before launch
+  after testing showed inconsistent guidance, keeping scope on the core
+  resume workflow. Featured in
+  \href{https://uctechnews.ucop.edu/uc-santa-cruz-student-builds-free-resume-tool/}{\underline{UC Tech News}} and
+  \href{https://lookout.co/how-a-ucsc-student-built-website-helps-undergrads-go-from-career-questions-to-options/story}{\underline{Lookout Santa Cruz}}.
+}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {Founding Growth}
+  {Nov 2025 -- Dec 2025}
+  {Floot (YC S25; full-time, on-site)}
+  {San Francisco, CA}
+
+\resumeItemListStart
+
+\resumeItem{
+  \textbf{Operations Pipeline:} Built and ran the hiring pipeline for
+  user-generated content (UGC) creators and structured the content
+  operations that fed organic growth.
+}
+
+\resumeItem{
+  \textbf{Launch Execution:} Stood up the company's first acquisition
+  funnels during the YC S25 cohort.
+}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {Undergraduate Research Assistant}
+  {Sep 2023 -- Jun 2024}
+  {The Humanities Institute, UC Santa Cruz}
+  {Santa Cruz, CA}
+
+\resumeItemListStart
+
+\resumeItem{
+  \textbf{Cross-Functional Coordination:} Turned the faculty lead's research
+  goals into scoped requirements for a \textbf{five-person} engineering and
+  UI/UX team, weighing researcher needs against technical limits.
+}
+
+\resumeItem{
+  \textbf{Self-Service Launch:} Delivered a PDF translation pipeline across
+  \textbf{two model families} (OpenAI, Mistral) as a Flask web app on Heroku,
+  so researchers could run translations without scripts or engineering help.
+}
+
+\resumeItem{
+  \textbf{Quality Review:} Supported a review step in which graduate
+  researchers checked translation output against source texts.
+}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{PM Interview Practice Platform} (Owner)}
+  {2026 -- Present}
+
+\resumeItemListStart
+\resumeItem{
+  Planned and shipped \textbf{four practice tracks} with \textbf{100-point}
+  rubrics, resumable sessions, a transcript and grade dashboard, and
+  ELO-based ratings by case type.
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+
+\section{Skills}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Program \& Operations}{: Project planning, requirements scoping,
+    prioritization, cross-functional coordination, process improvement,
+    experiment design} \\
+    \textbf{Analytics}{: Funnel, activation, conversion, and retention metrics;
+    pricing tests; SQL} \\
+    \textbf{Tools}{: Jira, Linear, Notion, Figma, PostHog, Microsoft Clarity,
+    Stripe, Google Search Console} \\
+    \textbf{Technical}{: Python, JavaScript, PostgreSQL, Django, Git,
+    OpenAI \& Claude APIs}
+  }}
+\end{itemize}
+
+\end{document}
